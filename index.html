@@ -62,8 +62,7 @@
 <body>
 
 <div class="container">
-  <!-- updated src with correct logo filename (including space) -->
-  <img class="logo" src="ems logo.png" alt="SAEMS Logo">
+  <img class="logo" src="ems_logo.png" alt="SAEMS Logo">
   <h1>SAEMS Department Application Form</h1>
 
   <p class="req-title">Requirements</p>
@@ -86,4 +85,53 @@
     <select id="rules" name="Familiar_with_Server_Rules">
       <option value="Yes">Yes</option>
       <option value="No">No</option>
-    </s
+    </select>
+
+    <label for="banned">Are you banned Recently (Any Server)?</label>
+    <select id="banned" name="Banned_Recently">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="charname">Character Name</label>
+    <input type="text" id="charname" name="Character_Name" required>
+
+    <label for="about">Explain About your Character (up to 100 words)</label>
+    <textarea id="about" name="About_Character" maxlength="750" rows="4" required></textarea>
+
+    <label for="edu">Character Educational Details (In-City)</label>
+    <textarea id="edu" name="Character_Educational_Details" rows="3" required></textarea>
+
+    <label for="why">Why you want to join SAEMS?</label>
+    <textarea id="why" name="Why_join_SAEMS" rows="4" required></textarea>
+
+    <label for="experience">Do you have any past experience in any other server? (if so please mention server name and time you spent.)</label>
+    <textarea id="experience" name="Past_Experience" rows="4" required></textarea>
+
+    <label for="hours">How many hours can you give to EMS per week?</label>
+    <input type="text" id="hours" name="Weekly_Hours" required>
+
+    <label for="role">What do you think an SAEMS is supposed to do?</label>
+    <textarea id="role" name="SAEMS_Role" rows="4" required></textarea>
+
+    <label for="dept">Which departments comes under SAEMS?</label>
+    <textarea id="dept" name="Departments_Under_SAEMS" rows="3" required></textarea>
+
+    <label for="promotion">Do you understand the promotion rule?</label>
+    <select id="promotion" name="Understand_Promotion_Rule">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="agree">If we found you breaking server rules as an SAEMS character you will be fired. Do you agree?</label>
+    <select id="agree" name="Agree_to_Rules">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</div>
+
+</body>
+</html>
