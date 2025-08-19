@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>San Andreas EMS Application</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 50px;
+    }
+    .container {
+      background: #fff;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 15px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #1976d2;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>San Andreas EMS Application Form</h1>
+    <form action="https://formsubmit.co/suryanulu09@gmail.com" method="POST">
+      <!-- you can change the value of _subject if you want a different email title -->
+      <input type="hidden" name="_subject" value="New EMS Application Received">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="Name" required />
+
+      <label for="discord">Discord ID (Example: Username#0000)</label>
+      <input type="text" id="discord" name="Discord_ID" required />
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="Age" required />
+
+      <label for="experience">RP Experience</label>
+      <textarea id="experience" name="RP_Experience" rows="4" required></textarea>
+
+      <label for="why">Why do you want to join EMS?</label>
+      <textarea id="why" name="Why_join_EMS" rows="4" required></textarea>
+
+      <label for="hours">In-game Hours</label>
+      <input type="text" id="hours" name="In_game_Hours" required />
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
