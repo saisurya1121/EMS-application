@@ -3,38 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>San Andreas EMS Application</title>
-
+  <title>SAEMS Department Application</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      padding: 50px;
+      background: #f1f1f1;
+      padding: 40px;
     }
     .container {
       background: #fff;
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 auto;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
     }
     h1 {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
+    }
+    .logo {
+      max-width: 130px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .req-title {
+      color: #b30000;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 15px;
     }
     label {
-      display: block;
       margin-top: 15px;
+      display: block;
       font-weight: 600;
     }
-    input, textarea {
+    textarea, input, select {
       width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 6px;
       padding: 10px;
       margin-top: 5px;
-      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
     }
     button {
       margin-top: 20px;
@@ -42,40 +52,86 @@
       padding: 12px;
       border: none;
       border-radius: 8px;
+      background: #b30000;
+      color: #fff;
       font-size: 16px;
       cursor: pointer;
-      background: #1976d2;
-      color: #fff;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>San Andreas EMS Application Form</h1>
-    <form action="https://formsubmit.co/suryanulu09@gmail.com" method="POST">
-      <!-- you can change the value of _subject if you want a different email title -->
-      <input type="hidden" name="_subject" value="New EMS Application Received">
 
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="Name" required />
+<div class="container">
+  <img class="logo" src="ems_logo.png" alt="SAEMS Logo">
+  <h1>SAEMS Department Application Form</h1>
 
-      <label for="discord">Discord ID (Example: Username#0000)</label>
-      <input type="text" id="discord" name="Discord_ID" required />
+  <p class="req-title">Requirements</p>
+  <ul>
+    <li>You must have a working microphone.</li>
+    <li>You must be 17+ or older.</li>
+    <li>You must be able to work as a team.</li>
+    <li>You should be capable of learning new things.</li>
+    <li>If we find you breaking server rules you will be removed from the chief position.</li>
+    <li>If we find plagiarism or use of ChatGPT you will be rejected.</li>
+  </ul>
 
-      <label for="age">Age</label>
-      <input type="number" id="age" name="Age" required />
+  <form action="https://formsubmit.co/suryanulu09@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New SAEMS Application">
 
-      <label for="experience">RP Experience</label>
-      <textarea id="experience" name="RP_Experience" rows="4" required></textarea>
+    <label for="discord">Discord ID (Example - user#0000)</label>
+    <input type="text" id="discord" name="Discord_ID" required>
 
-      <label for="why">Why do you want to join EMS?</label>
-      <textarea id="why" name="Why_join_EMS" rows="4" required></textarea>
+    <label for="rules">Are you familiar with server rules?</label>
+    <select id="rules" name="Familiar_with_Server_Rules">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
 
-      <label for="hours">In-game Hours</label>
-      <input type="text" id="hours" name="In_game_Hours" required />
+    <label for="banned">Are you banned Recently (Any Server)?</label>
+    <select id="banned" name="Banned_Recently">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
 
-      <button type="submit">Submit Application</button>
-    </form>
-  </div>
+    <label for="charname">Character Name</label>
+    <input type="text" id="charname" name="Character_Name" required>
+
+    <label for="about">Explain About your Character (up to 100 words)</label>
+    <textarea id="about" name="About_Character" maxlength="750" rows="4" required></textarea>
+
+    <label for="edu">Character Educational Details (In-City)</label>
+    <textarea id="edu" name="Character_Educational_Details" rows="3" required></textarea>
+
+    <label for="why">Why you want to join SAEMS?</label>
+    <textarea id="why" name="Why_join_SAEMS" rows="4" required></textarea>
+
+    <label for="experience">Do you have any past experience in any other server? (if so please mention server name and time you spent.)</label>
+    <textarea id="experience" name="Past_Experience" rows="4" required></textarea>
+
+    <label for="hours">How many hours can you give to EMS per week?</label>
+    <input type="text" id="hours" name="Weekly_Hours" required>
+
+    <label for="role">What do you think an SAEMS is supposed to do?</label>
+    <textarea id="role" name="SAEMS_Role" rows="4" required></textarea>
+
+    <label for="dept">Which departments comes under SAEMS?</label>
+    <textarea id="dept" name="Departments_Under_SAEMS" rows="3" required></textarea>
+
+    <label for="promotion">Do you understand the promotion rule?</label>
+    <select id="promotion" name="Understand_Promotion_Rule">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="agree">If we found you breaking server rules as an SAEMS character you will be fired. Do you agree?</label>
+    <select id="agree" name="Agree_to_Rules">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</div>
+
 </body>
 </html>
